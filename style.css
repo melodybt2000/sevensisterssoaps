@@ -1,0 +1,197 @@
+body {
+    margin: 0;
+    font-family:'Lato', sans-serif;
+    background-color: #FFFFFF;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #122958;
+    color: #FFFFFF;
+    padding: 20px 40px;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+}
+nav a:hover {
+    color: #5F7EA8;
+}
+.hero {
+    text-align:center;
+    padding: 50px 20px 25px;
+}
+.hero h1 {
+    color: #122958;
+    font-size: 48px;
+    font-family: 'Cormorant Garamond', serif;
+}
+.hero p {
+    font-size: 22px;
+    color: #496B9A;
+}
+button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #5F7EA8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #1F3B73;
+}
+.logo {
+    width: 180px;
+    height: auto;
+}
+.hero-logo {
+    width: 800px;
+    height: auto;
+    margin-bottom: 20px;
+}
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.product-card {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #d9e2f0;
+    margin: 20px;
+    display: flex;
+    flex-direction:column;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width:1200px;
+    margin: 0 auto;
+}
+.product-card h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #122958;
+    font-size: 35px;
+    margin: 15px 0 5px;
+}
+.product-card p {
+    font-family: 'Lato', sans-serif;
+    color: #496B9A;
+    font-size: 17px;
+    margin: 5px 0 10px;
+}
+.product-card .description {
+    flex: 1;
+}
+.product-card .price {
+    font-family: 'Lato', sans-serif;
+    color: #122958;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 10px 0;
+}
+.product-card button {
+    background-color: #5F7EA8;
+    color: #ffffff;
+    border: none;
+    padding: 10px 22px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: auto;
+}
+.product-card button:hover {
+    background-color: #122958;
+}
+.brand-intro {
+    text-align: center;
+    padding: 35px 20px 60px;
+    border-bottom: 3px solid #D9E2F0;
+}
+.brand-intro h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color:#122958;
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+.brand-intro p {
+    font-family: 'Lato', sans-serif;
+    color: #496B9A;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.brand-intro button {
+    background-color: #5F7EA8;
+    border: none;
+    padding: 12px 26px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.brand-intro button:hover {
+    background-color:#122958;
+}
+.brand-highlights {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 40px;
+    max-width:900px;
+    margin: 40px auto 80px;
+    text-align: center;
+}
+.brand-highlights h3 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #122958;
+    font-size: 30px;
+    margin: 0 0 10px;
+}
+.brand-highlights p {
+    font-family: 'Lato', sans-serif;
+    color: #496B9A;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+.seven-sisters-difference {
+    padding: 80px 40px;
+    text-align: left;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.seven-sisters-difference h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #122958;
+    font-size: 52px;
+    font-weight: 500;
+    margin: 0 0 20px;
+}
+.seven-sisters-difference ul {
+    margin: 0;
+    padding-left: 45px;
+}
+.seven-sisters-difference li {
+    font-family: 'Cormorant Garamond', serif;
+    color:#122958;
+    font-size: 24px;
+    line-height: 1.5;
+}
