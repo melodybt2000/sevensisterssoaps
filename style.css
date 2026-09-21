@@ -195,3 +195,32 @@ button:hover {
     font-size: 24px;
     line-height: 1.5;
 }
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+    border-top: 3px solid #D9E2F0;
+}
+
+.contact h2 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #122958;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-family: 'Cormorant Garamond', sans-serif;
+    color: #496B9A;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+.contact a {
+    color: #5F7EA8;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    color: #122958;
+    text-decoration: underline;
+}
