@@ -224,3 +224,80 @@ button:hover {
     color: #122958;
     text-decoration: underline;
 }
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .hero {
+        padding: 35px 20px 25px;
+    }
+
+    .hero-logo {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 19px;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .product-card {
+        margin: 10px 0;
+    }
+
+    .seven-sisters-difference {
+        padding: 60px 25px;
+    }
+
+    .seven-sisters-difference h2 {
+        font-size: 42px;
+    }
+
+    .seven-sisters-difference li {
+        font-size: 21px;
+    }
+}
+.shop-page {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.shop-page h1 {
+    font-family: 'Cormorant Garamond', serif;
+    color: #122958;
+    font-size: 52px;
+    margin-bottom: 15px;
+}
+
+.shop-page > p {
+    font-family: 'Lato', sans-serif;
+    color: #496B9A;
+    font-size: 19px;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
