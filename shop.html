@@ -12,7 +12,7 @@
 
 <body>
 
-<nav>
+<nav class="secondary-nav">
     <img src="images/logo.jpg" alt="Seven Sisters Savonnier logo" class="logo">
 
     <ul>
@@ -22,16 +22,91 @@
         <li><a href="index.html#contact">Contact</a></li>
     </ul>
 </nav>
+<section class="collections">
+    <h2>Shop Our Collections</h2>
 
-<section class="shop-page">
-    <h1>Shop Our Soaps</h1>
+    <div class="collection-carousel">
 
-    <p>
-        Explore our handcrafted collection of artisan soaps,
-        thoughtfully made in small batches.
-    </p>
+        <button class="collection-arrow collection-prev" type="button" aria-label="Previous collection">
+            &#10094;
+        </button>
 
+        <div class="collection-card-wrapper">
+
+           <a href="#" class="collection-card">
+             <h3>All Collections</h3>
+                <img src="images/all-collections-img.png" alt="All Collections">
+             </a>
+            <a href="#" class="collection-card">
+                <h3>Garden Collection</h3>
+                <img src="images/garden-collection-img.png" alt="Garden Collection">
+            </a>
+             <a href="#" class="collection-card">
+                 <h3>Spa Collection</h3>
+                <img src="images/spa-collection-img.png" alt="Spa Collection">
+            </a>
+
+            <a href="#" class="collection-card">
+                 <h3>Lavender Collection</h3>
+                 <img src="images/lavender-collection-img.png" alt="Lavender Collection">
+            </a>
+
+            <a href="#" class="collection-card">
+                <h3>Sensitive Skin Collection</h3>
+                <img src="images/sensitive-skin-collection-img.png" alt="Sensitive Skin Collection">
+            </a>
+
+            <a href="#" class="collection-card">
+                <h3>Signature Collection</h3>
+                <img src="images/signature-collection-img.png" alt="Signature Collection">
+            </a>
+
+            <a href="#" class="collection-card">
+                <h3>Earth and Sea Collection</h3>
+                <img src="images/earth-and-sea-collection-img.png" alt="Earth and Sea Collection">
+            </a>   
+        </div>
+
+        <button class="collection-arrow collection-next" type="button" aria-label="Next collection">
+            &#10095;
+        </button>
+
+    </div>
 </section>
+<script>
+    const cards = document.querySelectorAll('.collection-card');
+    const previousButton = document.querySelector('.collection-prev');
+    const nextButton = document.querySelector('.collection-next');
 
+    let currentCollection = 0;
+
+    function showCollection(index) {
+        cards.forEach((card, i) => {
+            card.style.display = i === index ? 'block' : 'none';
+        });
+    }
+
+    previousButton.addEventListener('click', () => {
+        currentCollection--;
+
+        if (currentCollection < 0) {
+            currentCollection = cards.length - 1;
+        }
+
+        showCollection(currentCollection);
+    });
+
+    nextButton.addEventListener('click', () => {
+        currentCollection++;
+
+        if (currentCollection >= cards.length) {
+            currentCollection = 0;
+        }
+
+        showCollection(currentCollection);
+    });
+
+    showCollection(currentCollection);
+</script>
 </body>
 </html>

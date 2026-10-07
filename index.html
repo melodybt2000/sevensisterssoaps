@@ -10,6 +10,7 @@
 <body>
 <nav>
     <img src="images/logo.jpg" alt="Seven Sisters Savonnier logo" class="logo">
+    <p class="shopping-message">Online shopping coming soon!</p>
      <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="shop.html">Shop</a></li>
@@ -60,6 +61,25 @@ for generations.
         </div>
     </div>
 </section>
+<section class="custom-soaps">
+    <h2>Custom Soaps</h2>
+
+    <p>
+        Looking for something made especially for you? We offer custom soap
+        creations for weddings, showers, gifts, special events, and more.
+    </p>
+
+    <p class="custom-order-note">
+    Custom orders must be placed at least 10 weeks in advance.
+    </p>
+
+    <p>
+        For custom soap inquiries, please email
+        <a href="mailto:sssavonnier@gmail.com">sssavonnier@gmail.com</a>
+    </p>
+
+</section> 
+
 <section class="seven-sisters-difference" id="seven-sisters-difference">
 
     <h2>The Seven Sisters Difference</h2>
@@ -94,6 +114,17 @@ for generations.
         </a>
     </p>
 </section>
+<script>
+    window.addEventListener('scroll', function() {
+        const nav = document.querySelector('nav');
+
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
+</script>
     </body>
     </html>
 
